@@ -14,10 +14,10 @@ DIR=$(dirname $(readlink -f $0))
 SERVICECTL_ENABLED_PATH="$DIR/enabled/"
 
 # Check is root
-if [ $EUID -ne 0 ]; then
-  echo "You must run as root user" 2>&1
-  exit 1
-fi
+#if [ $EUID -ne 0 ]; then
+#  echo "You must run as root user" 2>&1
+#  exit 1
+#fi
 
 # Parse ini file. usage: parse $inifile $section $key
 # Return 0 on success, 1 if file cannot be opened, 2 if the given key cannot be found in the given section
