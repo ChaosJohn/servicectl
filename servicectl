@@ -4,7 +4,8 @@
 #
 
 # Pach systemd services file
-SYSTEMD_UNITS_PATH="/usr/lib/systemd/system/"
+# SYSTEMD_UNITS_PATH="/usr/lib/systemd/system/"
+SYSTEMD_UNITS_PATH="/lib/systemd/system/"
 
 # Path locate this script
 DIR=$(dirname $(readlink -f $0))
